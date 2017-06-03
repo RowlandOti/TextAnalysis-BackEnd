@@ -1,7 +1,7 @@
 # TextAnalysis-BackEnd
 :love_letter: Back end for text analysis
 
-## [Flask](flask.pocoo.org/) API
+## [Flask](www.flask.pocoo.org/) API
 
 On the DIR with the file 'controller.py' Run
 

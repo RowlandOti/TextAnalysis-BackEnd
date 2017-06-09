@@ -5,14 +5,18 @@
 
 On the DIR with the file 'controller.py' Run
 
+We all dont like flask running on port 5000 so lets install gunicorn and do it like the 'pros' :)
+
+```sh
+pip install gunicorn
+```
+Then, on the folder with controller.py
 ```sh
 export FLASK_APP=controller.py
 
-flask run
+gunicorn controller:app
 ```
 
-It should start the server on your machine, 
-
-### [TextAnalysis-Frontend](https://github.com/RowlandOti/TextAnalysis-FrontEnd) Does the rest
+It should start the server on your machine.
 
 :)

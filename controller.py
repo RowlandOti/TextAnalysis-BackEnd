@@ -67,8 +67,8 @@ analyze = [
 
 @app.route("/", methods=['GET'])
 def askApi():
-    #return render_template("index.html")
-    return jsonify({'analyze': analyze})
+    return render_template("index.html")
+    #return jsonify({'analyze': analyze})
 
 
 @app.route("/api/v1.0/<string:text>", methods=['GET'])

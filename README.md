@@ -10,11 +10,11 @@ We all dont like flask running on port 5000 so lets install gunicorn and do it l
 ```sh
 pip install gunicorn
 ```
-Then, on the folder with controller.py
+Then, on the folder with allinone.py
 ```sh
-export FLASK_APP=controller.py
+export FLASK_APP=allinone.py
 
-gunicorn controller:app
+gunicorn allinone:app
 ```
 
 It should start the server on your machine.

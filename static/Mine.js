@@ -89,7 +89,7 @@ class Mines extends React.Component{
                     this.setState({fetching: false})
                     this.setState({val: response.data.analyze.sentiment})
                 }else{
-                    this.setState({val: "Bad"})
+                    this.setState({val: "No response"})
                 }
                 }    
             

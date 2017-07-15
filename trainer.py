@@ -316,7 +316,6 @@ class EfficientLowNoiseSentimentalNeuralNetwork(object):
                TN += 1
         if y_predicted==0 and y_actual!=y_predicted:
                FN += 1
-
         return np.array((TP, FP, TN, FN))
 
     def get_target_for_label(self, label):
@@ -338,18 +337,11 @@ def hello(analyze):
 
     result_ = load_.predict(analyze)
 
-
     perc = result_ * 100
     if perc >= 50:
         answer = "POSITIVE %s" %(perc)
     else:
         answer = "NEGATIVE %s" %(perc)
 
-    print(analyze)
+    print(answer)
     return answer
-
-
-analyzed = input("What do you want analyzed? ")
-sentiment = hello(analyzed)
-
-print(sentiment)

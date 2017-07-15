@@ -4,11 +4,10 @@ import TextField from 'material-ui/TextField';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 
-import Mines from './Mine.js';
+import Mines from './New.js';
 
 const App = () => (
-    <MuiThemeProvider>
-        
+    <MuiThemeProvider>   
         <Mines/>
     </MuiThemeProvider>
     

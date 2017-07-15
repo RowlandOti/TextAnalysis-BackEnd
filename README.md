@@ -3,20 +3,32 @@
 
 ### Flask API For TextAnalysis
 
-On the DIR with the file 'controller.py' Run
-
-We all dont like flask running on port 5000 so lets install gunicorn and do it like the 'pros' :)
+The BackEnd!
+We'll use python3 in a virtualenv, ensure you have it installed
 
 ```sh
-pip install gunicorn
+virtualenv -p python3 TextEnv
+cd TextEnv
+
+source bin/activate
+
 ```
-Then, on the folder with allinone.py
+We need a few Dependencies: PS ensure you have activated the virtualenv
+
 ```sh
-export FLASK_APP=allinone.py
-
-gunicorn allinone:app
+pip3 install flask
+pip3 install flask-cors
+pip3 install cython
+pip3 install numpy
 ```
 
-It should start the server on your machine.
+Then clone the TextAnalysis-BackEnd
 
-:)
+```sh
+cd TextAnalysis-BackEnd
+
+export FLASK_APP=allinone.python3
+flask run
+```
+
+Head over to your browser and rock on!

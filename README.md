@@ -22,7 +22,7 @@ pip3 install cython
 pip3 install numpy
 ```
 
-Then clone the TextAnalysis-BackEnd
+Then clone the TextAnalysis-BackEnd. 
 
 ```sh
 cd TextAnalysis-BackEnd
